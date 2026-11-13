@@ -167,16 +167,21 @@ body {
   z-index: 9999999;
 }
 
-#preloader h1 {
+#preloader .preloader-text {
   position: absolute;
   font-family: 'Space Grotesk', sans-serif;
   font-weight: 800;
   font-size: 14px;
   text-transform: uppercase;
+
   left: 50%;
   top: 58%;
-  margin-left: -60px;
-  /* Centered adjustment */
+  transform: translateX(-50%);
+
+  width: max-content;
+  max-width: 90%;
+  text-align: center;
+
   color: #000;
   letter-spacing: 2px;
 }
