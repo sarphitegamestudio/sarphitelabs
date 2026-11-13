@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sarphite Labs</title>
+
+  <!-- Icon -->
+  <link rel="icon" type="image/png" href="assets/media/logo-transparent.png">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Space+Grotesk:wght@500;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+  <!-- 
+  /* ==========================================================================
+     GLOBAL INTERACTION LAYER
+     ========================================================================== */
+  -->
+  <!-- Custom Forensic Progress Bar -->
+  <div class="scroll-progress-bar"></div>
+
+  <!-- Black-Site Navigation Overlay -->
+  <div class="black-site-nav">
+    <div class="nav-content">
+      <p class="nav-label">SNAP TO SECTION</p>
+      <a href="#smooth-wrapper" class="nav-link" data-text="01. INITIALIZE">01. INITIALIZE</a>
+      <a href="#showcase" class="nav-link" data-text="02. THE EVIDENCE">02. THE EVIDENCE</a>
+      <a href="#video-showcase" class="nav-link" data-text="03. FORENSICS">03. FORENSICS</a>
+      <a href="#dossier" class="nav-link" data-text="04. OPERATOR DOSSIER">04. OPERATOR DOSSIER</a>
+      <a href="#asset-vault" class="nav-link" data-text="05. ESTABLISH CONTACT">05. ESTABLISH CONTACT</a>
+    </div>
+  </div>
+
+  <!-- Speeding CSS Preloader -->
+  <div id="preloader">
+    <div class="speeder-body">
+      <span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </span>
+      <div class="base">
+        <span></span>
+        <div class="face"></div>
+      </div>
+    </div>
+    <div class="longfazers">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <h1 id="preloader-text" style="text-align: center">LOADING SYSTEM...</h1>
+  </div>
+
+  <!-- Custom Cursor Elements -->
+  <div class="cursor-dot"></div>
+  <div class="cursor-outline"></div>
+
+  <!-- Navigation & Theme Switcher -->
+  <header class="site-header">
+    <div class="brand">
+      <img src="assets/media/logo.png" alt="Sarphite Labs" class="brand-logo" onerror="this.style.display='none'">
+      <div class="logo-text">SARPHITE<span>.LABS</span></div>
+      <div class="dev-badge">BY BIOSGAMER</div>
+    </div>
+    
+    <!-- Advanced Central HUD (Real-Time Telemetry) -->
+    <div class="header-hud">
+      <div class="hud-panel">
+        <span class="hud-label">HEAP:</span>
+        <span class="hud-value memory-tracker">--MB</span>
+      </div>
+      <div class="hud-divider"></div>
+      <div class="hud-panel main-panel">
+        <div class="hud-audio-bars">
+          <span></span><span></span><span></span><span></span><span></span>
+        </div>
+        <div class="hud-data">
+          <span class="hud-status-text speed-tracker" data-text="UPLINK_SECURE // ESTABLISHING...">UPLINK_SECURE // ESTABLISHING...</span>
+          <span class="hud-sub">AWAITING_COMMAND_PROMPT</span>
+        </div>
+      </div>
+      <div class="hud-divider"></div>
+      <div class="hud-panel">
+        <span class="hud-label">PING:</span>
+        <span class="hud-value ping-tracker">--ms</span>
+      </div>
+      <div class="hud-spinner"></div>
+    </div>
+
+    <!-- Tactical System Menu Toggle -->
+    <button class="menu-toggle tactical-btn">
+      <div class="tac-bracket tac-tl"></div>
+      <div class="tac-bracket tac-tr"></div>
+      <div class="tac-bracket tac-bl"></div>
+      <div class="tac-bracket tac-br"></div>
+      <div class="tac-hamburger">
+        <span class="h-line h1"></span>
+        <span class="h-line h2"></span>
+        <span class="h-line h3"></span>
+      </div>
+      <div class="tac-cross">
+        <span class="x-line x1"></span>
+        <span class="x-line x2"></span>
+      </div>
+      <div class="hover-fill"></div>
+    </button>
+  </header>
+
+  <!-- 
+  /* ==========================================================================
+     MAIN CONTENT CANVAS
+     ========================================================================== */
+  -->
+  <main id="smooth-wrapper">
+    <div id="smooth-content">
+
+      <!-- 
+      /* ==========================================================================
+         HERO / INTRODUCTION SYSTEM
+         ========================================================================== */
+      -->
+      <!-- Professional Cinematic Studio Hero Section -->
+      <section class="hero-section">
+        <!-- Top Marquee Tape -->
+        <div class="marquee-container top-marquee">
+          <div class="marquee-content">
+            <span>// CLEARANCE LEVEL 5 REQUIRED // SARPHITE LABS ACTIVE // UE5 MULTIPLAYER DEPLOYED //</span>
+            <span>// CLEARANCE LEVEL 5 REQUIRED // SARPHITE LABS ACTIVE // UE5 MULTIPLAYER DEPLOYED //</span>
+          </div>
+        </div>
+        <div class="hero-noise-overlay"></div>
+
+        <!-- The Ambient Background Orbs -->
+        <div class="hero-backdrop-glow orb-1"></div>
+        <div class="hero-backdrop-glow orb-2"></div>
+        <div class="hero-backdrop-glow orb-3"></div>
+        <div class="hero-backdrop-glow orb-4"></div>
+        <div class="hero-backdrop-glow orb-5"></div>
+        <div class="hero-backdrop-glow orb-6"></div>
+        <div class="hero-backdrop-glow orb-7"></div>
+        <div class="hero-backdrop-glow orb-8"></div>
+
+        <!-- Floating Background HUD Elements -->
+        <div class="hero-hud-floaters">
+          <div class="hud-item hud-left-1">[ SYNC_NODE: ACTIVE ]</div>
+          <div class="hud-item hud-left-2">SARPHITE_LABS // ENCRYPTED</div>
+          <div class="hud-item hud-right-1">PORT: 8080</div>
+          <div class="hud-item hud-right-2">SYS.UE5_AUTH_BYPASS</div>
+        </div>
+
+        <div class="hero-grid">
+
+          <!-- Left Column: Impact Content -->
+          <div class="hero-content">
+            <div class="badge-row">
+              <div class="badge"><span class="live-dot"></span> SECURE FILE // AGENT_ID: 804</div>
+              <div class="badge-sub">SYSTEMS &amp; GAME DEV</div>
+            </div>
+
+            <h1 class="hero-title" data-text="ARCHITECTING SYSTEMS &amp; CINEMATIC WORLDS">ARCHITECTING SYSTEMS &amp;
+              CINEMATIC WORLDS</h1>
+
+            <p class="hero-subtext">
+              Independent Game Developer (UE5/Unity) &amp; Full-Stack Engineer.
+              Specializing in rapid prototypes, server-authoritative backends, and high-retention motion media.
+            </p>
+
+            <div class="cta-row">
+              <a href="#showcase" class="btn primary-btn">Inspect Evidence</a>
+              <a href="#asset-vault" class="btn secondary-btn">Establish Contact</a>
+            </div>
+          </div>
+
+          <!-- Right Column: Cinematic Framed Evidence ID Card -->
+          <div class="hero-visual">
+            <div class="floating-pill pill-1">
+              <span class="pill-icon">⚡</span>
+              <span>UE5 &amp; Node.js Expert</span>
+            </div>
+
+            <div class="floating-pill pill-2">
+              <span class="pill-icon">🛡️</span>
+              <span>Server-Authoritative</span>
+            </div>
+
+            <div class="evidence-id-card">
+              <div class="card-glare"></div>
+              <div class="card-pin"></div>
+              <div class="id-photo-frame">
+                <img src="assets/media/logo.png" alt="Sarphite Labs Logo" onerror="this.style.display='none'">
+              </div>
+              <div class="id-details">
+                <span class="id-tag">CLEARANCE: LEVEL 5</span>
+                <h3>SARPHITE LABS</h3>
+                <p>STATUS: ACTIVE DEPLOYMENT</p>
+                <div class="barcode-mini">||| |||| || | ||</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Infinite Marquee Tape -->
+        <div class="marquee-container">
+          <div class="marquee-content">
+            <span>// CLEARANCE LEVEL 5 REQUIRED // SARPHITE LABS ACTIVE // UE5 MULTIPLAYER DEPLOYED //</span>
+            <span>// CLEARANCE LEVEL 5 REQUIRED // SARPHITE LABS ACTIVE // UE5 MULTIPLAYER DEPLOYED //</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- 
+      /* ==========================================================================
+         CASE FILE SHOWCASE / BOARD LAYOUT
+         ========================================================================== */
+      -->
+      <!-- Detective Wall & Camera Pan Showcase -->
+      <section id="showcase" class="board-section">
+
+        <!-- The massive canvas that we will move around with the camera -->
+        <div class="camera-rig">
+
+          <!-- BACKGROUND CLUES -->
+          <div class="decor-items blurred-background">
+            <div class="clue map-clue">
+              <div class="tape top-left"></div>
+              <div class="tape bottom-right"></div>
+              <img src="https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&w=600&q=80"
+                alt="City Map">
+              <div class="red-circle" style="top: 30%; left: 40%;"></div>
+            </div>
+
+            <div class="clue polaroid-clue clue-1">
+              <div class="pin"></div>
+              <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=400&q=80"
+                alt="Gaming Setup">
+              <div class="polaroid-text">UNKNOWN ENTITY</div>
+            </div>
+
+            <div class="clue polaroid-clue clue-2">
+              <div class="tape top-center"></div>
+              <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=400&q=80"
+                alt="Code Matrix">
+              <div class="polaroid-text">05/20 - SIGHTING</div>
+            </div>
+
+            <div class="clue polaroid-clue clue-3">
+              <div class="pin"></div>
+              <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=400&q=80"
+                alt="Server Room">
+              <div class="polaroid-text">AIVEN DB LINK?</div>
+            </div>
+
+            <div class="clue polaroid-clue clue-4">
+              <div class="tape top-left"></div>
+              <img src="https://images.unsplash.com/photo-1614729939124-03290b56c9ce?auto=format&fit=crop&w=400&q=80"
+                alt="Wireframe">
+              <div class="polaroid-text">UE5 ARCHITECTURE</div>
+            </div>
+
+            <div class="clue torn-page clue-5">
+              <div class="pin"></div>
+              <h4>INTERVIEW LOG</h4>
+              <p>Subject refuses to explain how the multiplayer auth token bypasses the local state machine...</p>
+            </div>
+
+            <div class="clue torn-page clue-6">
+              <div class="pin"></div>
+              <h4>SYS_LOG.txt</h4>
+              <p>Crash detected at 0400 hours. Aiven DB connection refused. What are they hiding?</p>
+            </div>
+
+            <div class="clue polaroid-clue clue-7">
+              <div class="tape top-right"></div>
+              <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=400&q=80"
+                alt="Code Screen">
+              <div class="polaroid-text">REDACTED</div>
+            </div>
+
+            <!-- Frantic Red Marker Notes Scattered Everywhere -->
+            <div class="marker-note" style="top: 15%; left: 35%; transform: rotate(-12deg);">How???</div>
+            <div class="marker-note" style="top: 38%; left: 70%; transform: rotate(8deg);">3:15 AM</div>
+            <div class="marker-note" style="top: 85%; left: 30%; transform: rotate(-5deg);">!!!</div>
+            <div class="marker-note" style="top: 25%; left: 10%; transform: rotate(15deg);">WHO IS HE?</div>
+            <div class="marker-note" style="top: 60%; left: 20%; transform: rotate(-8deg);">Check the server logs</div>
+            <div class="marker-note" style="top: 55%; left: 55%; transform: rotate(4deg);">MISSING</div>
+            <div class="marker-note" style="top: 88%; left: 60%; transform: rotate(-10deg);">Dead End.</div>
+            <div class="marker-note" style="top: 75%; left: 85%; transform: rotate(12deg);">Matches pattern</div>
+            <div class="marker-note" style="top: 10%; left: 8%; transform: rotate(5deg);">Look closer.</div>
+            <div class="marker-note" style="top: 50%; left: 90%; transform: rotate(-15deg);">Why here?</div>
+            <div class="marker-note" style="top: 90%; left: 10%; transform: rotate(-8deg);">Connect the dots.</div>
+          </div>
+
+          <!-- THE CURVY RED STRINGS -->
+          <svg class="red-strings slightly-blurred" width="100%" height="100%" viewBox="0 0 100 100"
+            preserveAspectRatio="none">
+            <filter id="shadow">
+              <feDropShadow dx="0.5" dy="1" stdDeviation="0.5" flood-color="#000" flood-opacity="0.6" />
+            </filter>
+            <path class="string string-1" vector-effect="non-scaling-stroke" filter="url(#shadow)"
+              d="M 20 20 C 40 5, 55 15, 75 45" />
+            <path class="string string-2" vector-effect="non-scaling-stroke" filter="url(#shadow)"
+              d="M 75 45 C 70 70, 45 60, 25 75" />
+            <path class="string string-3" vector-effect="non-scaling-stroke" filter="url(#shadow)"
+              d="M 25 75 C 40 95, 60 80, 75 90" />
+          </svg>
+
+          <!-- The Main Project Cards -->
+          <div class="board-content">
+            <article class="case-file card-1">
+              <div class="pin"></div>
+              <div class="tape bottom-right"></div>
+              <div class="file-header">CONFIDENTIAL // SUSPECT 01</div>
+              <h2>Game Deploy Hub v2</h2>
+              <p>Full-stack "Steam-style" game distribution network built with Node.js. Features secure token
+                authentication, user game libraries, and cloud media integration.</p>
+              <div class="tech-tags-paper"><span>NODE.JS</span><span>AIVEN DB</span></div>
+            </article>
+
+            <article class="case-file newspaper card-2">
+              <div class="tape top-left"></div>
+              <div class="tape top-right"></div>
+              <div class="news-header">BREAKING NEWS</div>
+              <h2>Horror & RPG Logic</h2>
+              <p>Modular gameplay systems discovered across Unreal Engine 5 & Unity. Engineered state machines, player
+                inventory management, and dynamic lighting rigs linked to the suspect.</p>
+              <div class="tech-tags-paper"><span>UE5</span><span>UNITY</span></div>
+            </article>
+
+            <article class="case-file card-3">
+              <div class="pin"></div>
+              <div class="file-header">INCIDENT REPORT</div>
+              <h2>Turn-Based Networking</h2>
+              <p>Lightweight session architecture for board-style mechanics. Handles turn validation, move verification,
+                and deterministic game-state synchronization.</p>
+              <div class="tech-tags-paper"><span>SESSION SYNC</span></div>
+            </article>
+
+            <article class="case-file card-4">
+              <div class="tape top-center"></div>
+              <div class="file-header">EVIDENCE LOG #404</div>
+              <h2>High-Retention Motion</h2>
+              <p>Short-form streaming content optimized for hook retention. Utilizes advanced keyframing, velocity
+                curves, and multi-track sound layering to manipulate viewers.</p>
+              <div class="tech-tags-paper"><span>CAPCUT</span><span>KEYFRAMING</span></div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- 
+      /* ==========================================================================
+         3D FORENSIC LAB / WEBGL PRESENTATION
+         ========================================================================== */
+      -->
+      <!-- True 3D WebGL Showcase -->
+      <section id="video-showcase" class="video-section">
+
+        <!-- Background Decor: Free Unsplash Tech Texture -->
+        <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=2000&q=80"
+          class="tech-bg-img" alt="Digital Matrix">
+
+        <div class="drafting-grid"></div>
+        <div class="bg-glow"></div>
+
+        <!-- Floating Blurred Background Evidence -->
+        <div class="floating-bg-elements">
+          <!-- Big Background Blurs -->
+          <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=400&q=80"
+            class="float-item item-1" alt="Bg">
+          <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=400&q=80"
+            class="float-item item-2" alt="Bg">
+          <img src="https://images.unsplash.com/photo-1614729939124-03290b56c9ce?auto=format&fit=crop&w=400&q=80"
+            class="float-item item-3" alt="Bg">
+          <div class="float-item item-4 tech-tags-paper"><span>CONFIDENTIAL</span></div>
+
+          <!-- Small Debris / Tech Fragments -->
+          <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=400&q=80"
+            class="float-item item-5" alt="Bg">
+          <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=400&q=80"
+            class="float-item item-6" alt="Bg">
+          <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=400&q=80"
+            class="float-item item-7" alt="Bg">
+          <img src="https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&w=400&q=80"
+            class="float-item item-8" alt="Bg">
+
+          <!-- Text Fragments -->
+          <div class="float-item item-9 tech-tags-paper"><span>SYS_ERR</span></div>
+          <div class="float-item item-10 tech-tags-paper"><span>PORT: 8080</span></div>
+          <div class="float-item item-11 tech-tags-paper"><span>AUTH_BYPASS</span></div>
+          <div class="float-item item-12 tech-tags-paper"><span>ROOT_ACCESS</span></div>
+
+          <!-- Deep Background Micro-Blurs -->
+          <img src="https://images.unsplash.com/photo-1614729939124-03290b56c9ce?auto=format&fit=crop&w=400&q=80"
+            class="float-item item-13" alt="Bg">
+          <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=400&q=80"
+            class="float-item item-14" alt="Bg">
+          <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=400&q=80"
+            class="float-item item-15" alt="Bg">
+        </div>
+
+        <!-- Animated Focus Brackets -->
+        <div class="focus-brackets">
+          <div class="bracket tl"></div>
+          <div class="bracket tr"></div>
+          <div class="bracket bl"></div>
+          <div class="bracket br"></div>
+        </div>
+
+        <!-- Floating HUD Elements & Radar Crosshairs -->
+        <div class="crosshair" style="top: 25%; left: 35%;"></div>
+        <div class="crosshair" style="top: 65%; left: 85%;"></div>
+        <div class="crosshair" style="top: 80%; left: 15%;"></div>
+
+        <!-- Floating System Logs -->
+        <div class="tech-note" style="top: 15%; left: 8%;">// ANALYZING_MESH_DATA</div>
+        <div class="tech-note" style="top: 85%; right: 10%;">[RENDER_ENGINE_OK]</div>
+        <div class="tech-note" style="top: 30%; right: 4%; transform: rotate(90deg); transform-origin: right top;">
+          SYS.DEV_ENCRYPTED</div>
+        <div class="tech-note" style="top: 75%; left: 5%; transform: rotate(-90deg); transform-origin: left top;">FOV:
+          45mm // APERTURE: f/1.8</div>
+
+        <!-- Floating HUD Elements & Radar Crosshairs -->
+        <div class="crosshair" style="top: 25%; left: 35%;"></div>
+        <div class="crosshair" style="top: 65%; left: 85%;"></div>
+        <div class="crosshair" style="top: 80%; left: 15%;"></div>
+
+        <!-- Interactive Drag HUD Prompt -->
+        <div class="interactive-drag-hud">
+          <span class="hud-dot"></span>
+          <span class="hud-text">TIP: LEFT-CLICK TO ROTATE</span>
+        </div>
+
+        <!-- The WebGL Canvas -->
+        <div id="canvas-container" class="video-container"></div>
+
+        <!-- The Information Cards (Forensic Lab Reports) -->
+        <div class="video-overlays">
+
+          <!-- Card 1: Cassette -->
+          <div class="card-positioner pos-right">
+            <div class="forensic-report" id="vid-card-1">
+
+              <!-- The Gun Background (Hidden until hovered) -->
+              <div class="gun-bg"></div>
+
+              <!-- The Confidential Overlay -->
+              <div class="confidential-overlay">
+                <div class="confidential-text">CONFIDENTIAL</div>
+                <div class="confidential-stamp">S</div>
+                <div class="click-prompt">[ CLICK TO REVEAL ]</div>
+              </div>
+
+              <div class="paperclip"></div>
+              <div class="top-secret-stamp">CONFIDENTIAL</div>
+              <div class="report-header">
+                <span class="report-title">FORENSIC LAB REPORT</span>
+                <span class="report-code">EXB-01</span>
+              </div>
+              <div class="report-body">
+                <div class="data-row">
+                  <span class="data-label">EXHIBIT ID</span>
+                  <span class="data-value">AUDIO SURVEILLANCE</span>
+                </div>
+                <div class="data-row">
+                  <span class="data-label">SUBJECT ACTION</span>
+                  <span class="data-value highlight-blue">Game Deploy Hub v2</span>
+                </div>
+                <div class="analysis-box">
+                  <div class="analysis-label">ANALYSIS LOG</div>
+                  <p>Engineered a scalable Node.js network. Transcribed logs confirm the architecture bypasses standard
+                    cloud latency via real-time media integration. Advanced Aiven DB clustering detected.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2: Magnifier -->
+          <div class="card-positioner pos-left">
+            <div class="forensic-report" id="vid-card-2">
+
+              <!-- The Gun Background -->
+              <div class="gun-bg"></div>
+
+              <!-- The Confidential Overlay -->
+              <div class="confidential-overlay">
+                <div class="confidential-text">CONFIDENTIAL</div>
+                <div class="confidential-stamp">S</div>
+                <div class="click-prompt">[ CLICK TO REVEAL ]</div>
+              </div>
+
+              <div class="paperclip"></div>
+              <div class="top-secret-stamp">CONFIDENTIAL</div>
+              <div class="report-header">
+                <span class="report-title">FORENSIC LAB REPORT</span>
+                <span class="report-code">EXB-02</span>
+              </div>
+              <div class="report-body">
+                <div class="data-row">
+                  <span class="data-label">EXHIBIT ID</span>
+                  <span class="data-value">FORENSIC SCAN</span>
+                </div>
+                <div class="data-row">
+                  <span class="data-label">SUBJECT ACTION</span>
+                  <span class="data-value highlight-blue">Horror & RPG Logic</span>
+                </div>
+                <div class="analysis-box">
+                  <div class="analysis-label">ANALYSIS LOG</div>
+                  <p>Deep-level directory scans revealed highly complex state machines, player inventory management, and
+                    dynamic lighting rigs across UE5. Structural integrity indicates mastermind-level architecture.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3: Hat -->
+          <div class="card-positioner pos-right">
+            <div class="forensic-report" id="vid-card-3">
+
+              <!-- The Gun Background -->
+              <div class="gun-bg"></div>
+
+              <!-- The Confidential Overlay -->
+              <div class="confidential-overlay">
+                <div class="confidential-text">CONFIDENTIAL</div>
+                <div class="confidential-stamp">S</div>
+                <div class="click-prompt">[ CLICK TO REVEAL ]</div>
+              </div>
+
+              <div class="paperclip"></div>
+              <div class="top-secret-stamp">CONFIDENTIAL</div>
+              <div class="report-header">
+                <span class="report-title">FORENSIC LAB REPORT</span>
+                <span class="report-code">EXB-03</span>
+              </div>
+              <div class="report-body">
+                <div class="data-row">
+                  <span class="data-label">EXHIBIT ID</span>
+                  <span class="data-value">BEHAVIOR PROFILE</span>
+                </div>
+                <div class="data-row">
+                  <span class="data-label">SUBJECT ACTION</span>
+                  <span class="data-value highlight-blue">Turn-Based Networking</span>
+                </div>
+                <div class="analysis-box">
+                  <div class="analysis-label">ANALYSIS LOG</div>
+                  <p>Lightweight session architecture for board-style mechanics. Session validation logic securely
+                    prevents player tampering. Confirms extensive background in server-authoritative mechanics.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4: Pen -->
+          <div class="card-positioner pos-left">
+            <div class="forensic-report" id="vid-card-4">
+
+              <!-- The Gun Background -->
+              <div class="gun-bg"></div>
+
+              <!-- The Confidential Overlay -->
+              <div class="confidential-overlay">
+                <div class="confidential-text">CONFIDENTIAL</div>
+                <div class="confidential-stamp">S</div>
+                <div class="click-prompt">[ CLICK TO REVEAL ]</div>
+              </div>
+
+              <div class="paperclip"></div>
+              <div class="top-secret-stamp">CONFIDENTIAL</div>
+              <div class="report-header">
+                <span class="report-title">FORENSIC LAB REPORT</span>
+                <span class="report-code">EXB-04</span>
+              </div>
+              <div class="report-body">
+                <div class="data-row">
+                  <span class="data-label">EXHIBIT ID</span>
+                  <span class="data-value">PSYCH TACTICS</span>
+                </div>
+                <div class="data-row">
+                  <span class="data-label">SUBJECT ACTION</span>
+                  <span class="data-value highlight-blue">High-Retention Motion</span>
+                </div>
+                <div class="analysis-box">
+                  <div class="analysis-label">ANALYSIS LOG</div>
+                  <p>Analysis of short-form media shows advanced keyframing, multi-track layering, and velocity curves
+                    specifically engineered to hijack viewer attention loops. A highly calculated visual weapon.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 
+      /* ==========================================================================
+         OPERATOR DOSSIER / TACTICAL HUD (UPGRADED)
+         ========================================================================== */
+      -->
+      <section id="dossier" class="dossier-section">
+        <!-- Massive Ambient Background Text -->
+        <div class="dossier-bg-text" data-speed="0.8">SARPHITE</div>
+        
+        <div class="dossier-layout">
+          
+          <!-- Left: The Visual Radar & Identity -->
+          <div class="dossier-visual dossier-reveal">
+            
+            <!-- Adding tooltip text so user knows they can interact -->
+            <div class="radar-container" id="radar-wrapper" title="DRAG TO ROTATE">
+              <div class="radar-bg-grid"></div>
+              <div class="radar-sweep"></div>
+              <div id="dossier-canvas" class="radar-canvas"></div>
+              <div class="radar-crosshairs"></div>
+              <div class="radar-hud-text top-left">SARPHITE_SYS: ONLINE</div>
+              <div class="radar-hud-text bottom-right">LOC: CLASSIFIED</div>
+            </div>
+            
+            <div class="operator-profile">
+              <!-- Advanced Frame Hover Structure for Logo -->
+              <div class="op-logo-wrap">
+                <img src="assets/media/logo.png" alt="Sarphite Labs Logo" class="op-logo" onerror="this.style.display='none'">
+                <div class="op-logo-frame"></div>
+              </div>
+              
+              <div class="op-info">
+                <!-- Awwwards Style Scanner Sweep Data Attribute -->
+                <h3 class="op-name" data-text="BIOSGAMER">BIOSGAMER</h3>
+                
+                <p class="op-role"><span class="slash">//</span> FOUNDER: <span class="highlight-hover">SARPHITE LABS</span></p>
+                <p class="op-status"><span class="live-dot-mini"></span> NETWORK SECURE</p>
+              </div>
+            </div>
+
+            <!-- Enhanced Telemetry Fill -->
+            <div class="op-metrics">
+              <div class="metric"><span>SERVER:</span> ACTIVE</div>
+              <div class="metric"><span>UPTIME:</span> 99.9%</div>
+              <div class="metric"><span>PING:</span> 12ms</div>
+              <div class="metric"><span>PACKETS:</span> 0% LOSS</div>
+            </div>
+
+          </div>
+
+          <!-- Right: Premium Skills & Data -->
+          <!-- We wrap this in 'dossier-panel' to give it the exact same dark glass background as the left card -->
+          <div class="dossier-data dossier-panel dossier-reveal">
+            
+            <div class="dossier-header">
+              <span class="pulse-warning">OPERATOR CAPABILITIES SCAN</span>
+              
+              <!-- Stunning Chromatic Aberration Hover Title -->
+              <h2 class="cyber-title" data-text="SARPHITE LABS ARCHITECT">SARPHITE LABS ARCHITECT</h2>
+            </div>
+            
+            <!-- Sleek Premium Skills List -->
+            <div class="premium-skill-list">
+              
+              <div class="skill-row">
+                <div class="skill-info">
+                  <span class="skill-idx">01</span>
+                  <h3 class="skill-name">UNITY 3D</h3>
+                </div>
+                <div class="skill-meta">
+                  <span class="skill-tag">// ENGINE</span>
+                  <span class="badge">3 YRS</span>
+                </div>
+              </div>
+              
+              <div class="skill-row">
+                <div class="skill-info">
+                  <span class="skill-idx">02</span>
+                  <h3 class="skill-name">UNREAL ENGINE 5</h3>
+                </div>
+                <div class="skill-meta">
+                  <span class="skill-tag">// ENGINE</span>
+                  <span class="badge">2 YRS</span>
+                </div>
+              </div>
+              
+              <div class="skill-row">
+                <div class="skill-info">
+                  <span class="skill-idx">03</span>
+                  <h3 class="skill-name">WEB DEVELOPMENT</h3>
+                </div>
+                <div class="skill-meta">
+                  <span class="skill-tag">// STACK</span>
+                  <span class="badge">PRO</span>
+                </div>
+              </div>
+              
+              <div class="skill-row">
+                <div class="skill-info">
+                  <span class="skill-idx">04</span>
+                  <h3 class="skill-name">VIDEO EDITING</h3>
+                </div>
+                <div class="skill-meta">
+                  <span class="skill-tag">// MEDIA</span>
+                  <span class="badge">PRO</span>
+                </div>
+              </div>
+
+              <!-- Corrupted Data Block (Rest of the skills hidden) -->
+              <div class="corrupted-data-block glitch-target dossier-reveal">
+                <div class="corrupted-text" data-text="[ DATA FRAGMENTED // FURTHER SKILLS UNREADABLE ]">
+                  [ DATA FRAGMENTED // FURTHER SKILLS UNREADABLE ]
+                </div>
+                <div class="corrupted-sub">SYS_ERR: MULTIPLE MODULES COMPROMISED</div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- 
+      /* ==========================================================================
+         CLASSIFIED ASSET VAULT (Biometric Unlock & Native Boundary Lock)
+         ========================================================================== */
+      -->
+      <section id="asset-vault" class="vault-section">
+        
+        <!-- Realistic Steel Blast Doors -->
+        <div class="vault-doors" id="vault-doors">
+          <div class="vault-door left-door">
+            <div class="door-lock-bar left-bar"></div>
+            <div class="door-texture"></div>
+            <div class="caution-tape"></div>
+          </div>
+          <div class="vault-door right-door">
+            <div class="door-lock-bar right-bar"></div>
+            <div class="door-texture"></div>
+            <div class="caution-tape tape-right"></div>
+          </div>
+          
+          <div class="scanner-console">
+            <div class="scanner-ring"></div>
+            <button type="button" class="scanner-btn" id="biometric-btn">
+              <div class="logo-wrapper">
+                <img src="assets/media/logo-transparent.png" alt="Sarphite Labs" class="scanner-logo" onerror="this.style.display='none'">
+                <div class="scan-laser"></div>
+              </div>
+            </button>
+            <div class="scanner-text" id="scanner-text">HOLD TO VERIFY IDENTITY</div>
+            <div class="progress-bar-container">
+              <div class="progress-bar-fill" id="scanner-progress"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- The Revealed Assets -->
+        <div class="vault-interior">
+           <div class="vault-header">
+              <span class="pulse-warning">DECRYPTION SUCCESSFUL</span>
+              <h2 class="cyber-title" data-text="RECOVERED ARCHIVES">RECOVERED ARCHIVES</h2>
+           </div>
+           
+           <div class="containment-chamber">
+              
+              <!-- Cryo Unit 1: Cryptography -->
+              <div class="cryo-unit magnetic-vault-card">
+                 <div class="cryo-cap top-cap">
+                   <div class="cap-light"></div>
+                 </div>
+                 <div class="cryo-glass">
+                   <div class="hologram-grid"></div>
+                   <div class="core-data">
+                     <div class="asset-type"><span class="bracket">&lt;</span> CRYPTOGRAPHY MODULE <span class="bracket">&gt;</span></div>
+                     <h3 class="asset-title text-glitch" data-text="AES Save Load Manager">AES Save Load Manager</h3>
+                     <p class="asset-desc">Engineered for absolute data retention. Implements strict AES-256 local state encryption to secure player progression against memory injection.</p>
+                   </div>
+                   <button type="button" class="extract-btn">
+                     <span class="btn-text">EXTRACT_CORE</span>
+                     <div class="btn-scanner-line"></div>
+                   </button>
+                 </div>
+                 <div class="cryo-cap bottom-cap"></div>
+              </div>
+
+              <!-- Cryo Unit 2: Core Architecture -->
+              <div class="cryo-unit magnetic-vault-card">
+                 <div class="cryo-cap top-cap">
+                   <div class="cap-light"></div>
+                 </div>
+                 <div class="cryo-glass">
+                   <div class="hologram-grid"></div>
+                   <div class="core-data">
+                     <div class="asset-type"><span class="bracket">&lt;</span> CORE ARCHITECTURE <span class="bracket">&gt;</span></div>
+                     <h3 class="asset-title text-glitch" data-text="Modular Save System">Modular Save System</h3>
+                     <p class="asset-desc">A highly scalable, plug-and-play state saving framework. Captures deep component variables and native structural logic dynamically.</p>
+                   </div>
+                   <button type="button" class="extract-btn">
+                     <span class="btn-text">EXTRACT_CORE</span>
+                     <div class="btn-scanner-line"></div>
+                   </button>
+                 </div>
+                 <div class="cryo-cap bottom-cap"></div>
+              </div>
+
+           </div>
+        </div>
+      </section>
+
+      <!-- 
+      /* ==========================================================================
+         FOOTER / SYSTEM CREDITS & LEGAL
+         ========================================================================== */
+      -->
+      <footer id="footer" class="site-footer">
+        <div class="credits-section">
+          <h4>// SYSTEM ARCHITECTURE & ASSET CREDITS</h4>
+          <div class="credits-grid">
+            <ul class="credits-list">
+              <li class="credit-category">[ CORE ENGINES ]</li>
+              <li>Motion & Physics: <strong>GSAP</strong> & <strong>Lenis</strong></li>
+              <li>WebGL Rendering: <strong>Three.js</strong></li>
+            </ul>
+            <ul class="credits-list">
+              <li class="credit-category">[ 3D ASSETS (Sketchfab) ]</li>
+              <li><a href="https://sketchfab.com/3d-models/cassette-c399cad3a0c64623b30be0c5ed206336" target="_blank" class="cyber-link">Cassette</a> by <strong>Mikhail Antonov</strong> (CC-BY)</li>
+              <li><a href="https://sketchfab.com/3d-models/styled-magnifying-glass-2d456cf49dd248739f3fb9616036c239" target="_blank" class="cyber-link">Magnifying Glass</a> by <strong>incg5764</strong> (CC-BY)</li>
+              <li><a href="https://sketchfab.com/3d-models/silenced-pistols-7a7ab21a1ff546cc93f8ca4a640d4fe2" target="_blank" class="cyber-link">Silenced Pistols</a> by <strong>ApproxiMakes</strong> (CC-BY)</li>
+              <li><a href="https://sketchfab.com/3d-models/aluminium-pen-98ef174d45824a56802bbd20d7a739f1" target="_blank" class="cyber-link">Aluminium Pen</a> by <strong>MihailoVeselinovic</strong> (CC-BY)</li>
+            </ul>
+            <ul class="credits-list">
+              <li class="credit-category">[ MEDIA & TYPOGRAPHY ]</li>
+              <li>Photography: <strong>Unsplash</strong></li>
+              <li>Typography: <strong>Google Fonts</strong> (Space Grotesk, JetBrains Mono)</li>
+            </ul>
+          </div>
+        </div>
+        <div class="legal-section">
+          <p class="copyright" data-text="© 2026 SARPHITE LABS. DEVELOPED BY BIOSGAMER.">© 2026 SARPHITE LABS. DEVELOPED BY BIOSGAMER.</p>
+          <p class="legal-warning">WARNING: PROPRIETARY ARCHITECTURE. Unauthorized reproduction, distribution, cloning, or derivative use of this code, design layout, or brand identity is strictly prohibited. Violators will be subject to immediate DMCA takedowns and prosecuted to the fullest extent of international copyright law.</p>
+        </div>
+      </footer>
+
+    </div>
+  </main>
+
+  <!-- Animation Engines -->
+  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+  <!-- Three.js 3D WebGL Engines -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+
+  <!-- Project Scripts -->
+  <script src="assets/javascript/app.js"></script>
+</body>
+
+</html>
